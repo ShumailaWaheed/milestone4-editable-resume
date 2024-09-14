@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Function to make sections editable
     function makeEditable() {
         const editableSections = document.querySelectorAll('[contenteditable]');
 
@@ -12,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // Function to toggle the visibility of the skills list
     function toggleSkills() {
         const toggleButton = document.getElementById('toggleSkills');
         const skillsList = document.getElementById('skillsList');
@@ -26,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleButton.textContent = isHidden ? 'Hide Skills' : 'Show Skills';
         });
     }
-
-    // Function to handle profile picture editing
     function enableProfilePicEditing() {
         const profilePic = document.getElementById('profilePic');
         const profilePicInput = document.getElementById('profilePicInput');
@@ -47,16 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
-    // Function to save changes (example implementation)
     function saveChanges() {
         const saveButton = document.getElementById('saveChanges');
         saveButton.addEventListener('click', () => {
-            alert('Changes saved!'); // Replace with actual save functionality
+            alert('Changes saved!'); 
         });
     }
-
-    // Initialize functions
     makeEditable();
     toggleSkills();
     enableProfilePicEditing();
